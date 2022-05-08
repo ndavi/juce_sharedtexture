@@ -16,6 +16,14 @@
 #endif
 
 #include "juce_sharedtexture.h"
+
+#if JUCE_MAC
+    #include "src/ofxSyphonClient.cpp"
+    #include "src/ofxSyphonServer.cpp"
+    #include "src/ofxSyphonServerDirectory.cpp"
+    #include "src/SyphonNameboundClient.m"
+#endif
+
 #include "SharedTexture.cpp"
 
 

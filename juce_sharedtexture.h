@@ -48,6 +48,8 @@ using namespace juce::gl;
 
 #if JUCE_WINDOWS
 #include "SpoutLibrary.h"
+#elif JUCE_MAC
+#include "src/ofxSyphon.h"
 #endif
 
 #include "SharedTexture.h"

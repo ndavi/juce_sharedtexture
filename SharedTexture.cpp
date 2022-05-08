@@ -67,7 +67,7 @@ void SharedTextureSender::setupNativeSender(bool forceRecreation)
 			isInit = true;
 		}
 #elif JUCE_MAC
-
+        mClient.setup();
 #endif
 	}
 	else
@@ -182,6 +182,7 @@ SharedTextureReceiver::~SharedTextureReceiver()
 	}
 	receiver = nullptr;
 #endif
+    receiver.setup();
 }
 
 void SharedTextureReceiver::setSharingName(const String& name)

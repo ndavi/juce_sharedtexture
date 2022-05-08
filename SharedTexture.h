@@ -10,7 +10,7 @@ public:
 #if JUCE_WINDOWS
 	SPOUTLIBRARY * spoutSender;
 #elif JUCE_MAC
-
+    ofxSyphonClient mClient;
 #endif
 
 	bool isInit;
@@ -66,7 +66,7 @@ public:
 #if JUCE_WINDOWS
 	SPOUTLIBRARY * receiver;
 #elif JUCE_MAC
-
+    ofxSyphonClient receiver;
 #endif
 
 	bool enabled;
